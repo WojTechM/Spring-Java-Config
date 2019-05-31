@@ -1,4 +1,4 @@
-package com.github.wojtechm;
+package com.github.wojtechm.hello_world;
 
 /**
  * @author Wojciech Makiela

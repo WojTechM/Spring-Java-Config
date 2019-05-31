@@ -78,7 +78,7 @@
                         <index>true</index>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.github.wojtechm.Main</mainClass>
+                            <mainClass>com.github.wojtechm.hello_world.Main</mainClass>
                         </manifest>
                         <manifestEntries>
                             <mode>development</mode>

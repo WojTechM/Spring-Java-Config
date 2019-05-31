@@ -1,4 +1,4 @@
-package com.github.wojtechm;
+package com.github.wojtechm.hello_world;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
