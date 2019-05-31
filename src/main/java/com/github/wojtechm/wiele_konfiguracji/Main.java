@@ -1,12 +1,14 @@
 package com.github.wojtechm.wiele_konfiguracji;
 
 import com.github.wojtechm.wiele_konfiguracji.fasolka.WonszBehaviour;
-import com.github.wojtechm.wiele_konfiguracji.konfiguracja.MegaKonfig;
-import com.github.wojtechm.wiele_konfiguracji.konfiguracja.RzecznyKonfig;
-import com.github.wojtechm.wiele_konfiguracji.konfiguracja.ZbiorczyKonfigWonszy;
+import com.github.wojtechm.wiele_konfiguracji.konfiguracja_źródeł.MegaKonfig;
+import com.github.wojtechm.wiele_konfiguracji.konfiguracja_źródeł.RzecznyKonfig;
+import com.github.wojtechm.wiele_konfiguracji.konfiguracja_źródeł.ZbiorczyKonfigWonszy;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
+ * Przykład użycia różnych źródeł konfiguracji - należy zerknąć na adnotację @{@link org.springframework.context.annotation.Import}
+ * za pomocą której możemy łączyć klasy w grupy.
  * @author Wojciech Makiela
  */
 class Main {

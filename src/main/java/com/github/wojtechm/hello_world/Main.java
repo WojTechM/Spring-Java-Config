@@ -3,6 +3,13 @@ package com.github.wojtechm.hello_world;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
+ * Przedstawienie 3 z 4 sposobów inicjalizacji klasy {@link AnnotationConfigApplicationContext}
+ * - Użycie metody register()
+ * - Podanie klas w konstruktorze
+ * - Podanie pakietu gdzie poszukiwana będzie konfiguracja
+ *
+ * W celu przełączania się pomiędzy poszczególnymi sposobami zmień wartość zmiennej ŹRÓDŁO_KONFIGURACJI
+ *
  * @author Wojciech Makiela
  */
 class Main {
@@ -12,7 +19,7 @@ class Main {
     }
 
     private static AnnotationConfigApplicationContext context;
-    private static ŹródłoKonfiguracji źródłoKonfiguracji = ŹródłoKonfiguracji.PAKIET;
+    private static final ŹródłoKonfiguracji ŹRÓDŁO_KONFIGURACJI = ŹródłoKonfiguracji.PAKIET;
 
     public static void main(String[] args) {
         stwórzContext();
@@ -21,7 +28,7 @@ class Main {
     }
 
     private static void stwórzContext() {
-        switch (źródłoKonfiguracji) {
+        switch (ŹRÓDŁO_KONFIGURACJI) {
             case REGISTER:
                 zarejetrujKlasyZKonfiguracją();
             case KLASA:
