@@ -1,26 +1,11 @@
 package com.github.wojtechm.b_wiele_konfiguracji.ziarno;
 
 /**
- *
- *             (>\---/<)
- *             ,'     `.
- *            /  q   p  \
- *           (  >(_Y_)<  )
- *            >-' `-' `-<-.
- *           /  _.== ,=.,- \
- *          /,    )`  '(    )
- *         ; `._.'      `--<
- *        :     \        |  )
- *        \      )       ;_/  hjw
- *         `._ _/_  ___.'-\\\
- *            `--\\\
- *
- *
  * @author Wojciech Makiela
  */
-public class Chomik implements Wybuchable {
+public class Petarda implements Wybuchable {
     @Override
     public void wybuchaj() {
-        System.out.println("*Puff*");
+        System.out.println("No i petarda... *Puff*");
     }
 }

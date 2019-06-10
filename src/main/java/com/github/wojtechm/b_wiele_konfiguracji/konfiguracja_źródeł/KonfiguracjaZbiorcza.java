@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Import;
  * @author Wojciech Makiela
  */
 @Configuration
-@Import({MegaKonfig.class, RzecznyKonfig.class})
-public class ZbiorczyKonfigWonszy {
+@Import({KonfiguracjaPetardy.class, KonfiguracjaGwiazdyNeutronowej.class})
+public class KonfiguracjaZbiorcza {
 
 }

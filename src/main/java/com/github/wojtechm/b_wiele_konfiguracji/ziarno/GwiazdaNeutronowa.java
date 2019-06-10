@@ -3,9 +3,11 @@ package com.github.wojtechm.b_wiele_konfiguracji.ziarno;
 /**
  * @author Wojciech Makiela
  */
-public class WonszRzeczny implements WonszBehaviour{
+public class GwiazdaNeutronowa implements Wybuchable {
+
     @Override
-    public void sycz() {
-        System.out.println("Tu dudududu");
+    public void wybuchaj() {
+        System.out.println("Tak właściwie, to gwiazdy neutronowe nie wybuchają, " +
+                "ale kto mi zabroni robić taki przykład? *Głośne kosmiczne Puff!*");
     }
 }
