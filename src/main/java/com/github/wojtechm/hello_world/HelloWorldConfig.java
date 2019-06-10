@@ -2,6 +2,7 @@ package com.github.wojtechm.hello_world;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 /**
  * @author Wojciech Makiela
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class HelloWorldConfig {
 
     @Bean
+    @Scope("singleton")
     public HelloWorld helloWorld() {
         return new HelloWorld();
     }

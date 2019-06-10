@@ -14,17 +14,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 class Main {
 
-    private enum ŹródłoKonfiguracji {
-        KLASA, PAKIET, REGISTER
-    }
-
     private static AnnotationConfigApplicationContext context;
     private static final ŹródłoKonfiguracji ŹRÓDŁO_KONFIGURACJI = ŹródłoKonfiguracji.REGISTER;
 
     public static void main(String[] args) {
         stwórzContext();
-        HelloWorld helloWorld = context.getBean(HelloWorld.class);
-        helloWorld.run();
+        for (int i = 0; i < 10; i++) {
+            HelloWorld helloWorld = context.getBean(HelloWorld.class);
+            helloWorld.run();
+        }
     }
 
     private static void stwórzContext() {
@@ -52,5 +50,9 @@ class Main {
 
     private static void wczytajContextZPakietu() {
         context = new AnnotationConfigApplicationContext("com.github.wojtechm");
+    }
+
+    private enum ŹródłoKonfiguracji {
+        KLASA, PAKIET, REGISTER
     }
 }
