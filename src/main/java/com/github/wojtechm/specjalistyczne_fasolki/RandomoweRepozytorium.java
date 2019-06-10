@@ -26,7 +26,6 @@ import java.util.List;
  *
  * @author Wojciech Makiela
  */
-@Repository
 class RandomoweRepozytorium {
 
     private List<OszołomionaOsoba> ludki;

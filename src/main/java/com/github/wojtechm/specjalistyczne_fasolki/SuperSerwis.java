@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
  *
  * @author Wojciech Makiela
  */
-@Service
 class SuperSerwis {
 
     private RandomoweRepozytorium repozytorium;
