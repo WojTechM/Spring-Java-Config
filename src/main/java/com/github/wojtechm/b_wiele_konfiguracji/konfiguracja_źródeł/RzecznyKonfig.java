@@ -1,6 +1,6 @@
 package com.github.wojtechm.b_wiele_konfiguracji.konfiguracja_źródeł;
 
-import com.github.wojtechm.b_wiele_konfiguracji.fasolka.WonszRzeczny;
+import com.github.wojtechm.b_wiele_konfiguracji.ziarno.WonszRzeczny;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

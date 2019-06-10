@@ -1,4 +1,4 @@
-package com.github.wojtechm.c_specjalistyczne_fasolki;
+package com.github.wojtechm.c_specjalistyczne_ziarna;
 
 /**
  * Proste POJO. Ot zwykła otoczka na imię.

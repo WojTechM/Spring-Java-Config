@@ -1,4 +1,4 @@
-package com.github.wojtechm.c_specjalistyczne_fasolki;
+package com.github.wojtechm.c_specjalistyczne_ziarna;
 
 /**
  * Serwis! Czyli nasza otoczka na logikę biznesową... i to tyle.
@@ -14,14 +14,14 @@ package com.github.wojtechm.c_specjalistyczne_fasolki;
  */
 class SuperSerwis {
 
-    private RandomoweRepozytorium repozytorium;
+    private RozsądneRepozytorium repozytorium;
 
-    SuperSerwis(RandomoweRepozytorium repozytorium) {
+    SuperSerwis(RozsądneRepozytorium repozytorium) {
         System.out.println(this.getClass().getName() + " - Konstruktor");
         this.repozytorium = repozytorium;
     }
 
-    public void setRepozytorium(RandomoweRepozytorium repozytorium) {
+    public void setRepozytorium(RozsądneRepozytorium repozytorium) {
         this.repozytorium = repozytorium;
     }
 

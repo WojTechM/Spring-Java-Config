@@ -1,4 +1,4 @@
-package com.github.wojtechm.c_specjalistyczne_fasolki;
+package com.github.wojtechm.c_specjalistyczne_ziarna;
 
 import java.util.Arrays;
 import java.util.List;
@@ -24,11 +24,11 @@ import java.util.List;
  *
  * @author Wojciech Makiela
  */
-class RandomoweRepozytorium {
+class RozsądneRepozytorium {
 
     private List<OszołomionaOsoba> ludki;
 
-    public RandomoweRepozytorium() {
+    public RozsądneRepozytorium() {
         System.out.println(this.getClass().getName() + " - Konstruktor");
 
         ludki = Arrays.asList(new OszołomionaOsoba("Wojciech"),

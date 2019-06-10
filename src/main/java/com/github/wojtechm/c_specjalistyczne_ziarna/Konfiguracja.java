@@ -1,6 +1,5 @@
-package com.github.wojtechm.c_specjalistyczne_fasolki;
+package com.github.wojtechm.c_specjalistyczne_ziarna;
 
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -9,10 +8,10 @@ import org.springframework.context.annotation.Scope;
  * @author Wojciech Makiela
  */
 @Configuration
-class Konfiguracja extends AnnotationConfigApplicationContext {
+class Konfiguracja {
 
-    private RandomoweRepozytorium randomoweRepozytorium() {
-        return new RandomoweRepozytorium();
+    private RozsądneRepozytorium randomoweRepozytorium() {
+        return new RozsądneRepozytorium();
     }
 
     private SuperSerwis superSerwis() {

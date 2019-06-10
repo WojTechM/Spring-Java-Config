@@ -1,9 +1,9 @@
-package com.github.wojtechm.a_hello_world;
+package com.github.wojtechm.a_witaj_swiecie;
 
 /**
  * @author Wojciech Makiela
  */
-class HelloWorld {
+class WitajŚwiecieZLicznikiem {
 
     private int poRazNty = 1;
 

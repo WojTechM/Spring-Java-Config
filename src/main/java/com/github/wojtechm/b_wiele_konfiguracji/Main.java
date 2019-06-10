@@ -1,6 +1,6 @@
 package com.github.wojtechm.b_wiele_konfiguracji;
 
-import com.github.wojtechm.b_wiele_konfiguracji.fasolka.WonszBehaviour;
+import com.github.wojtechm.b_wiele_konfiguracji.ziarno.WonszBehaviour;
 import com.github.wojtechm.b_wiele_konfiguracji.konfiguracja_źródeł.MegaKonfig;
 import com.github.wojtechm.b_wiele_konfiguracji.konfiguracja_źródeł.RzecznyKonfig;
 import com.github.wojtechm.b_wiele_konfiguracji.konfiguracja_źródeł.ZbiorczyKonfigWonszy;

@@ -1,4 +1,4 @@
-package com.github.wojtechm.a_hello_world;
+package com.github.wojtechm.a_witaj_swiecie;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,11 +8,11 @@ import org.springframework.context.annotation.Scope;
  * @author Wojciech Makiela
  */
 @Configuration
-public class HelloWorldConfig {
+public class KonfiguracjaWitajŚwiecie {
 
     @Bean
     @Scope("singleton")
-    public HelloWorld helloWorld() {
-        return new HelloWorld();
+    public WitajŚwiecieZLicznikiem helloWorld() {
+        return new WitajŚwiecieZLicznikiem();
     }
 }

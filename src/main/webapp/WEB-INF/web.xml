@@ -12,7 +12,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>com.github.wojtechm.c_specjalistyczne_fasolki.Konfiguracja</param-value>
+        <param-value>com.github.wojtechm.c_specjalistyczne_ziarna.Konfiguracja</param-value>
     </context-param>
 
     <servlet>
@@ -27,7 +27,7 @@
 
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>com.github.wojtechm.c_specjalistyczne_fasolki.Konfiguracja</param-value>
+            <param-value>com.github.wojtechm.c_specjalistyczne_ziarna.Konfiguracja</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
