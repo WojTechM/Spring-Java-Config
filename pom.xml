@@ -10,37 +10,71 @@
     <name>SpringJavaConfig</name>
     <description>SpringJavaConfig</description>
 
-
     <properties>
-        <!-- https://maven.apache.org/general.html#encoding-warning -->
+
+        <!-- Generic properties -->
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- https://maven.apache.org/general.html#special-characters-site -->
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <project.java.version>1.8</project.java.version>
-        <maven.compiler.source>${project.java.version}</maven.compiler.source>
-        <maven.compiler.target>${project.java.version}</maven.compiler.target>
-        <!-- see source for the plugins to verify if those can be skipped, they should IIRC -->
-        <maven.compiler.encoding>${project.build.sourceEncoding}</maven.compiler.encoding>
-        <maven.resources.encoding>${project.build.sourceEncoding}</maven.resources.encoding>
-        <version.maven>3.5.2</version.maven>
-        <!-- plugin versions should go here, so below they can be omitted -->
-        <version.plugin.maven.enforcer>3.0.0-M2</version.plugin.maven.enforcer>
-        <version.plugin.maven.jar>3.1.0</version.plugin.maven.jar>
-        <version.plugin.maven.compiler>3.8.0</version.plugin.maven.compiler>
-        <version.plugin.maven.resources>3.1.0</version.plugin.maven.resources>
+
+        <!-- Web -->
+        <servlet.version>3.0.1</servlet.version>
+        <jstl.version>1.2</jstl.version>
+
+        <!-- Spring -->
+        <spring-bom.version>5.1.7.RELEASE</spring-bom.version>
+        <jackson.version>1.9.13</jackson.version>
+
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-bom</artifactId>
+                <version>3.2.4.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
+
+        <!-- Other Web dependencies -->
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.14.3</version>
-            <scope>test</scope>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
         </dependency>
 
+        <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
+            <artifactId>spring-tx</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.1.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
             <version>5.1.6.RELEASE</version>
         </dependency>
 
@@ -50,54 +84,19 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>${version.plugin.maven.enforcer}</version>
-                <executions>
-                    <execution>
-                        <id>enforce-maven</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <requireMavenVersion>
-                                    <!-- helps with plugin versions, so you are more up-to-date -->
-                                    <version>${version.maven}</version>
-                                </requireMavenVersion>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>${version.plugin.maven.jar}</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
                 <configuration>
-                    <archive>
-                        <index>true</index>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <mainClass>com.github.wojtechm.hello_world.Main</mainClass>
-                        </manifest>
-                        <manifestEntries>
-                            <mode>development</mode>
-                            <url>${project.url}</url>
-                            <key>value</key>
-                        </manifestEntries>
-                    </archive>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${version.plugin.maven.compiler}</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <!-- if diff enconding than UTF8 is needed: https://maven.apache.org/plugins/maven-resources-plugin/examples/encoding.html -->
-                <version>${version.plugin.maven.resources}</version>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.2.0.v20140526</version>
             </plugin>
         </plugins>
     </build>

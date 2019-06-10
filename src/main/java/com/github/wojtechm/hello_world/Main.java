@@ -19,7 +19,7 @@ class Main {
     }
 
     private static AnnotationConfigApplicationContext context;
-    private static final ŹródłoKonfiguracji ŹRÓDŁO_KONFIGURACJI = ŹródłoKonfiguracji.PAKIET;
+    private static final ŹródłoKonfiguracji ŹRÓDŁO_KONFIGURACJI = ŹródłoKonfiguracji.REGISTER;
 
     public static void main(String[] args) {
         stwórzContext();
