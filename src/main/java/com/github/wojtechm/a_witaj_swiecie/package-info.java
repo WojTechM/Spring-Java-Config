@@ -1,5 +1,5 @@
 /**
- * Prezentacja konfiguracji programistycznej - Witaj Świecie!
+ * <h1>Prezentacja konfiguracji programistycznej - Witaj Świecie!</h1>
  *
  * Podczas zapoznania się z kodem w tym pakiecie poznasz sposoby na inicjalizację kontekstu aplikacji na różne sposoby.
  * Dowiesz się czym są adnotacje:
@@ -32,10 +32,13 @@
  *
  *          <li>{@link org.springframework.context.annotation.Scope @Scope}<br/>
  *              Pozwala nam zdefiniować w jaki sposób tworzone i wstrzykiwane będą instancje danej klasy.
- *              <p><b>"singleton"</b> - (w ramach tej metody) stworzona zostanie tylko jedna instancja i to ona
- *              będzie zwracana za każdym razem, gdy metoda jest wywołana. Możliwe jest posiadanie wielu
- *              metod z zakresem "singleton" zwracających różne instancje tej samej klasy.</p>
- *              <p><b>"prototype"</b> - przy każdorazowym pobraniu ziarna z kontenera springa, otrzymamy nową zupełnie nowe ziarno.</p>
+ *              <ul>
+ *                  <li><b>"singleton"</b> - (w ramach tej metody) stworzona zostanie tylko jedna instancja i to ona
+ *                  będzie zwracana za każdym razem, gdy metoda jest wywołana. Możliwe jest posiadanie wielu
+ *                  metod z zakresem "singleton" zwracających różne instancje tej samej klasy.
+ *                  </li>
+ *                  <li><b>"prototype"</b> - przy każdorazowym pobraniu ziarna z kontenera springa, otrzymamy nową zupełnie nowe ziarno.</li>
+ *              </ul>
  *          </li><br/>
  *
  *          <li>{@link org.springframework.context.annotation.Configuration @Configuration}<br/>

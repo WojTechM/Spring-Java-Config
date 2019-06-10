@@ -1,29 +1,35 @@
 package com.github.wojtechm.c_specjalistyczne_ziarna;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * Adnotacja @Repository informuje nas, że mamy do czynienia z "Repozytorium" (obviously) - obiektem
+ * Adnotacja {@link org.springframework.stereotype.Repository @Repository} informuje nas, że mamy do czynienia z "Repozytorium" (obviously) - obiektem
  * udostępniającym API do manipulacji danymi, a więc abstrakcją zbioru obiektów.
- *
- * W tym momencie przejdź proszę do dokumentacji adnotacji {@link @Repository} i przeczytaj ją całą.
- *
+ * <br/>
+ * W tym momencie przejdź proszę do dokumentacji adnotacji {@link org.springframework.stereotype.Repository @Repository} i przeczytaj ją całą.
+ * <br/>
  * Repozytoriów najczęściej używamy w powiązaniu z bazami danych, jednak w tym
  * przykładzie (w imię prostoty), skorzystamy z kolekcji obiektów w pamięci.
  * Dodatkowo, zgodnie z dokumentacją repozytorium powinno wspierać przynajmniej 3 podstawowe operacje
- *  - Zapis
- *  - Odczyt
- *  - Wyszukiwanie
+ *  <ul>
+ *      <li>Zapis</li>
+ *      <li>Odczyt</li>
+ *      <li>Wyszukiwanie</li>
+ *  </ul>
  * ale w imię prostoty (znowu) ograniczymy te funkcjonalności do wyłącznie odczytu.
  *
- * Na pocieszenie bazodanowy suchar:
+ * <p>Na pocieszenie bazodanowy suchar:</p>
+ * <br/>
  * Q: What's the second movie about a database engineer called?
- *
+ * <br/>...<br/>
  * A: The SQL.
  *
  * @author Wojciech Makiela
  */
+@Repository
 class RozsądneRepozytorium {
 
     private List<OszołomionaOsoba> ludki;
