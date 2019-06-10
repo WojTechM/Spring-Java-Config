@@ -1,6 +1,4 @@
-package com.github.wojtechm.specjalistyczne_fasolki;
-
-import org.springframework.stereotype.Service;
+package com.github.wojtechm.c_specjalistyczne_fasolki;
 
 /**
  * Serwis! Czyli nasza otoczka na logikę biznesową... i to tyle.

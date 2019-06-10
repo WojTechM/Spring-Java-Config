@@ -1,4 +1,4 @@
-package com.github.wojtechm.wiele_konfiguracji.fasolka;
+package com.github.wojtechm.b_wiele_konfiguracji.fasolka;
 
 /**
  * @author Wojciech Makiela

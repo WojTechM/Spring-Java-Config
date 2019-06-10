@@ -1,6 +1,4 @@
-package com.github.wojtechm.specjalistyczne_fasolki;
-
-import org.springframework.stereotype.Repository;
+package com.github.wojtechm.c_specjalistyczne_fasolki;
 
 import java.util.Arrays;
 import java.util.List;

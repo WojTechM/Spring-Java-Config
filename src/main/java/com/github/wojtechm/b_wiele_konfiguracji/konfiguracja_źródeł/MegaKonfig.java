@@ -1,6 +1,6 @@
-package com.github.wojtechm.wiele_konfiguracji.konfiguracja_źródeł;
+package com.github.wojtechm.b_wiele_konfiguracji.konfiguracja_źródeł;
 
-import com.github.wojtechm.wiele_konfiguracji.fasolka.MegaWonsz9;
+import com.github.wojtechm.b_wiele_konfiguracji.fasolka.MegaWonsz9;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

@@ -1,9 +1,9 @@
-package com.github.wojtechm.wiele_konfiguracji;
+package com.github.wojtechm.b_wiele_konfiguracji;
 
-import com.github.wojtechm.wiele_konfiguracji.fasolka.WonszBehaviour;
-import com.github.wojtechm.wiele_konfiguracji.konfiguracja_źródeł.MegaKonfig;
-import com.github.wojtechm.wiele_konfiguracji.konfiguracja_źródeł.RzecznyKonfig;
-import com.github.wojtechm.wiele_konfiguracji.konfiguracja_źródeł.ZbiorczyKonfigWonszy;
+import com.github.wojtechm.b_wiele_konfiguracji.fasolka.WonszBehaviour;
+import com.github.wojtechm.b_wiele_konfiguracji.konfiguracja_źródeł.MegaKonfig;
+import com.github.wojtechm.b_wiele_konfiguracji.konfiguracja_źródeł.RzecznyKonfig;
+import com.github.wojtechm.b_wiele_konfiguracji.konfiguracja_źródeł.ZbiorczyKonfigWonszy;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

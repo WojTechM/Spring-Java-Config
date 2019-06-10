@@ -1,4 +1,4 @@
-package com.github.wojtechm.specjalistyczne_fasolki;
+package com.github.wojtechm.c_specjalistyczne_fasolki;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
