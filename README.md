@@ -1,14 +1,33 @@
 # README
-SpringJavaConfig
+## SpringJavaConfig
 
-### Praca w toku
-Repozytorium do testowania programistycznej konfiguracji springa. Na bazie poznanych i przetestowanych tutaj rozwiązań powstaną warsztaty podejmujące tematykę:
+Podczas pracy z tym repozytorium poruszysz tematy:
 
-- Podstawy konfiguracji programistycznej - Hello World!
+- Podstawy konfiguracji programistycznej - Witaj Świecie!
 - Łączenie konfiguracji - @Configuration i @Import
-- Dostęp do fasolek na różne sposoby (per nazwa, per klasa itd.)
-- Scope ziaren
+- Dostęp do ziaren na różne sposoby (per nazwa, per klasa itd.)
+- Zakres ziaren
 - Tworzenie specjalistycznych ziaren - Controller, Service i Repository
-- Fabryka ziaren
-- Cykliczne zależności
-- Dobre praktyki
+
+### Jak pracować z tym repozytorium?
+Poszczególne pakiety w repozytorium obrazują pewien wycinek wiedzy z wspomnianej wyżej tematyki.
+
+Kolejne pakiety pokazują coraz to większy zakres materiałów, począwszy od
+prostej aplikacji 'Witaj Świecie', skończywszy na aplikacji webowej działającej
+z wykorzystaniem kontenera serwletów Jetty.
+
+Pakiety w tej aplikacji należy przechodzić po koleii (w porządku alfabetycznym).
+Każdy z kluczowych pakietów jest udokumentowany. Jeśli w którymś z pakietów nie znalazłeś/łaś
+dokumentacji, poszukaj opisu w pakiecie wyżej.
+
+Kroki które powinieneś wykonać (zadania koderskie jak i odnośniki do dokumentacji) 
+znajdziesz w dokumentacjach pakietów (patrz pliki package-info.java).
+
+#### Co gdy już wszystko przerobiłem?
+Na sam koniec zostaje zadanko koderskie. W katalogu 'resources' znajdziesz
+gotowy diagram klas. Zaimplementuj aplikację w zgodzie z tym diagramem.
+
+UWAGA! Jeśli zdecydujesz się na implementowanie tego zadania w tym repozytorium (co jest zalecane), 
+to pamiętaj o tym, że w tym projekcie jest już jeden działający kontroler. Tworzenie
+nowego może wymagać modyfikacji już istniejącego kontrolera, z powodów do których
+(mam nadzieję) dojdziesz na własną rękę.q
