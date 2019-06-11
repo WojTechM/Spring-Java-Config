@@ -1,5 +1,4 @@
-# README
-## SpringJavaConfig
+= SpringJavaConfig
 
 Podczas pracy z tym repozytorium poruszysz tematy:
 
