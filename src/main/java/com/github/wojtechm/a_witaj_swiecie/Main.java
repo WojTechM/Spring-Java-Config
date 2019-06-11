@@ -18,14 +18,14 @@ class Main {
     private static final ŹródłoKonfiguracji ŹRÓDŁO_KONFIGURACJI = ŹródłoKonfiguracji.REJESTR;
 
     public static void main(String[] args) {
-        stwórzContext();
+        stwórzKontekst();
         for (int i = 0; i < 10; i++) {
             WitajŚwiecieZLicznikiem witajŚwiecieZLicznikiem = kontekst.getBean(WitajŚwiecieZLicznikiem.class);
             witajŚwiecieZLicznikiem.run();
         }
     }
 
-    private static void stwórzContext() {
+    private static void stwórzKontekst() {
         switch (ŹRÓDŁO_KONFIGURACJI) {
             case REJESTR:
                 zarejetrujKlasyZKonfiguracją();
